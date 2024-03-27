@@ -7,6 +7,9 @@ def open_file(file_name: str):
 
 
 if __name__ == '__main__':
+    # основной код
+    # data - переменная для считывания данных
+    # hashes - хэш-таблица
     data = open_file('new_time.csv')
     hashes = dict()
     data = list(map(lambda x: [x[0], x[1], hash(x[2]), x[3], x[4]], data))
